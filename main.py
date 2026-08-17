@@ -257,4 +257,4 @@ while True:
     elif choice == "7":
          show_favorites()
     else:
-         print("아직 준비 중인 기능입니다.")
+         print("잘못된 메뉴 번호입니다. 다시 선택해주세요.")
