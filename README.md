@@ -60,4 +60,12 @@ GitHub 저장소
 
 https://github.com/1yuxnp/prompt-manager-2-1-
 
+<img width="565" height="206" alt="2" src="https://github.com/user-attachments/assets/11358863-a9f0-4e66-8c5e-12827ae6f62f" />
+<img width="551" height="70" alt="1 개발 환경 스크린샷" src="https://github.com/user-attachments/assets/135a3405-8d4b-433b-956c-8a72fb00844f" />
+<img width="768" height="400" alt="8" src="https://github.com/user-attachments/assets/28ed1d4e-9e1e-47d2-8016-0a9c4ca567dc" />
+<img width="431" height="528" alt="7" src="https://github.com/user-attachments/assets/6dffa1ba-d59c-4057-b49a-2249a066da0b" />
+<img width="401" height="384" alt="6" src="https://github.com/user-attachments/assets/af791d0c-84fb-4af1-8d9c-db7a3655ab8d" />
+<img width="314" height="317" alt="5" src="https://github.com/user-attachments/assets/f23e476b-36fd-4627-b135-d5e66269e134" />
+<img width="336" height="317" alt="4" src="https://github.com/user-attachments/assets/7250bc52-8e47-4f6e-bdc3-1efa7e2b6271" />
+<img width="478" height="444" alt="3" src="https://github.com/user-attachments/assets/be47cfde-cfda-4879-b40c-5dc20c11c9ef" />
 
