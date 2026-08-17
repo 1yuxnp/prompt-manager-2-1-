@@ -81,7 +81,7 @@ def show_list():
         return
 
     for i, prompt in enumerate(prompts, start=1):
-        favorite = " ⭐" if prompt["favorite"] else ""
+        favorite = " ⭐" if prompt["favorite"] else "☆"
         print(f'{i}. [{prompt["category"]}] {prompt["title"]}{favorite}')
 
     print()
