@@ -62,9 +62,6 @@ https://github.com/1yuxnp/prompt-manager-2-1-
 
 
 
-### 딱 이것만 하면 돼
-
-
 **VSCode 왼쪽 → `README.md` 클릭 → 기존 내용 전부 삭제 → 위 내용 전부 붙여넣기 → `Ctrl + S`**
 
 
