@@ -144,6 +144,83 @@ def search_prompt():
     else:
         print()
         print(f"{count}개의 프롬프트를 찾았습니다.")
+def show_detail():
+    print()
+    print("=== 프롬프트 상세 보기 ===")
+
+    if len(prompts) == 0:
+        print("등록된 프롬프트가 없습니다.")
+        return
+
+    number = input("번호 입력: ").strip()
+
+    if not number.isdigit():
+        print("올바른 번호를 입력해주세요.")
+        return
+
+    number = int(number)
+
+    if number < 1 or number > len(prompts):
+        print("존재하지 않는 번호입니다.")
+        return
+
+    prompt = prompts[number - 1]
+
+    favorite = "⭐" if prompt["favorite"] else "☆"
+
+    print()
+    print("────────────────────────")
+    print(f'제목: {prompt["title"]}')
+    print(f'카테고리: {prompt["category"]}')
+    print(f"즐겨찾기: {favorite}")
+    print("────────────────────────")
+    print("내용:")
+    print(prompt["content"])
+    print("────────────────────────")
+def toggle_favorite():
+    print()
+    print("=== 즐겨찾기 관리 ===")
+
+    if len(prompts) == 0:
+        print("등록된 프롬프트가 없습니다.")
+        return
+
+    number = input("프롬프트 번호 입력: ").strip()
+
+    if not number.isdigit():
+        print("올바른 번호를 입력해주세요.")
+        return
+
+    number = int(number)
+
+    if number < 1 or number > len(prompts):
+        print("존재하지 않는 번호입니다.")
+        return
+
+    prompt = prompts[number - 1]
+
+    if prompt["favorite"]:
+        prompt["favorite"] = False
+        print(f"'{prompt['title']}' 프롬프트를 즐겨찾기에서 해제했습니다.")
+    else:
+        prompt["favorite"] = True
+        print(f"'{prompt['title']}' 프롬프트를 즐겨찾기에 추가했습니다!")
+def show_favorites():
+    print()
+    print("=== 즐겨찾기 목록 ===")
+
+    count = 0
+
+    for i, prompt in enumerate(prompts, start=1):
+        if prompt["favorite"]:
+            print(f'{i}. [{prompt["category"]}] {prompt["title"]} ⭐')
+            count += 1
+
+    if count == 0:
+        print("즐겨찾기한 프롬프트가 없습니다.")
+    else:
+        print()
+        print(f"총 {count}개의 즐겨찾기")
 def show_menu():
     print()
     print("=== 나만의 프롬프트 관리 ===")
@@ -173,5 +250,11 @@ while True:
          show_category()
     elif choice == "4":
          search_prompt()
+    elif choice == "5":
+         show_detail()
+    elif choice == "6":
+         toggle_favorite()
+    elif choice == "7":
+         show_favorites()
     else:
          print("아직 준비 중인 기능입니다.")
