@@ -61,12 +61,3 @@ GitHub 저장소
 https://github.com/1yuxnp/prompt-manager-2-1-
 
 
-
-**VSCode 왼쪽 → `README.md` 클릭 → 기존 내용 전부 삭제 → 위 내용 전부 붙여넣기 → `Ctrl + S`**
-
-
-그리고 **아직 터미널에 `git` 명령어는 입력하지 마.**
-
-
-README 붙여넣고 저장했으면 **"했어"라고만 보내줘.**  
-그다음 내가 다음 한 단계만 알려줄게.
