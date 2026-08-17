@@ -60,4 +60,3 @@ GitHub 저장소
 
 https://github.com/1yuxnp/prompt-manager-2-1-
 
-<img width="551" height="70" alt="1 개발 환경 스크린샷" src="https://github.com/user-attachments/assets/4adf643c-e16c-4d44-b828-67048628003c" />
