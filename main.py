@@ -1,3 +1,11 @@
+categories = [
+    "텍스트 생성",
+    "이미지 생성",
+    "영상 생성",
+    "페르소나",
+    "자동화",
+    "기타"
+]
 prompts = [
     {
         "title": "Term Cafe UI 생성",
@@ -18,6 +26,52 @@ prompts = [
         "favorite": False
     }
 ]
+def add_prompt():
+    print()
+    print("=== 프롬프트 추가 ===")
+
+    while True:
+        title = input("제목: ").strip()
+
+        if title:
+            break
+
+        print("제목은 비워둘 수 없습니다.")
+
+    while True:
+        content = input("내용: ").strip()
+
+        if content:
+            break
+
+        print("내용은 비워둘 수 없습니다.")
+
+    print()
+    print("카테고리 선택:")
+
+    for i, category in enumerate(categories, start=1):
+        print(f"{i}) {category}")
+
+    while True:
+        choice = input("선택: ").strip()
+
+        if choice.isdigit() and 1 <= int(choice) <= len(categories):
+            category = categories[int(choice) - 1]
+            break
+
+        print("올바른 카테고리 번호를 입력해주세요.")
+
+    new_prompt = {
+        "title": title,
+        "content": content,
+        "category": category,
+        "favorite": False
+    }
+
+    prompts.append(new_prompt)
+
+    print()
+    print("프롬프트가 추가되었습니다!")
 def show_list():
     print()
     print("=== 프롬프트 목록 ===")
@@ -53,7 +107,8 @@ while True:
     if choice == "0":
        print("프로그램을 종료합니다.")
        break
-
+    elif choice == "1":
+         add_prompt()
     elif choice == "2":
          show_list()
 
